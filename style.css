@@ -1,0 +1,69 @@
+body {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 1. Position & Hide text */
+.hundred-days-of-code-ribbon {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  width: 12em;
+  height: 12em;
+  text-decoration: none;
+  overflow: hidden;
+  pointer-events: none;
+  text-decoration: none;
+  text-indent: -999999px;
+  font: 700 1em Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 2. Ribbon */
+.hundred-days-of-code-ribbon:before, .hundred-days-of-code-ribbon:after {
+  content: "";
+  position: absolute;
+  top: 4em;
+  right: -5em;
+  width: 20em;
+  height: 2.5em;
+  display: block;
+  background-color: black;
+
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  pointer-events: auto;
+}
+
+/* 3. Content */
+.hundred-days-of-code-ribbon:after {
+  content: "#50DaysOfCode : Day " attr(data-day);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  line-height: 3.5em;
+  text-decoration: none;
+  text-align: center;
+  text-indent: 0;
+  font-size: 0.95em;
+}
