@@ -4,7 +4,10 @@ body {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(to left, #2f2f2f, #fff);
+  background: linear-gradient(
+    to left, 
+    #2f2f2f, 
+    #fff);
 }
 
 p {
